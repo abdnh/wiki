@@ -1,4 +1,4 @@
-A personal [TiddlyWiki](https://tiddlywiki.com/) for random thoughts.
+A personal [TiddlyWiki](https://tiddlywiki.com/) for random thoughts. Written in Arabic.
 
 This was originally part of [my blog](https://github.com/abdnh/abdnh.github.io),
 but then I thought it's better to move it to its own repository.
