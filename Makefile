@@ -2,7 +2,7 @@
 
 all: index.html
 
-index.html: tiddlers plugins tiddlywiki.info
+index.html: tiddlers/* plugins/* tiddlywiki.info
 	tiddlywiki . --output . --build index
 
 serve:
