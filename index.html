@@ -144,6 +144,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/abdnh/References</li>
+
 <li>$:/config/AnimationDuration</li>
 
 <li>$:/config/HideTags</li>
@@ -212,6 +214,8 @@ Error message and password prompt
 
 <li>anki-random-word-generator.png</li>
 
+<li>AnkiWeb</li>
+
 <li>Antimoon</li>
 
 <li>ARLPCG</li>
@@ -265,6 +269,8 @@ Error message and password prompt
 <li>TiddlyWiki</li>
 
 <li>uom-icon</li>
+
+<li>wikipediaLinks</li>
 
 <li>YouGlish</li>
 
@@ -464,6 +470,8 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 <script class="tiddlywiki-tiddler-store" type="application/json">[
 
+{"title":"$:/abdnh/References","created":"20220626014744617","modified":"20220627050102880","tags":"$:/tags/ViewTemplate RTL","type":"text/vnd.tiddlywiki","text":"\u003Cdiv class=refs-section>\n\n\u003C$list filter=\"[all[current]tag[مفهوم]]\">\n\n\u003C$list filter=\"[all[current]get[enwiki]] [all[current]get[arwiki]] +[first[]]\" variable=_>\n\n\n!! مراجع\n\n\n\u003C$list filter=\"[all[current]get[arwiki]]\" variable=arwiki>\n\u003C$macrocall $name=\"arWiki\" title=\u003C\u003Carwiki>>/>\n\u003C/$list>\n\n\u003C$list filter=\"[all[current]get[enwiki]]\" variable=enwiki>\n\u003C$macrocall $name=\"enWiki\" title=\u003C\u003Cenwiki>>/>\n\u003C/$list>\n\n\n\u003C/$list>\n\n\u003C/$list>\n\n\u003C/div>","revision":"0","bag":"default"},
+
 {"title":"$:/config/AnimationDuration","created":"20210516080859754","modified":"20210516080859773","type":"text/vnd.tiddlywiki","text":"200","revision":"0","bag":"default"},
 
 {"title":"$:/config/HideTags","created":"20210531010346969","modified":"20210531010351398","tags":"","type":"text/vnd.tiddlywiki","text":"RTL","revision":"0","bag":"default"},
@@ -532,6 +540,8 @@ Error message and password prompt
 
 {"title":"anki-random-word-generator.png","text":"","type":"image/png","_canonical_uri":"./images/anki-random-word-generator.png","created":"20220326193401575","modified":"20220326193427669","tags":"RTL","revision":"0","bag":"default"},
 
+{"title":"AnkiWeb","created":"20220618225839382","modified":"20220618231156989","tags":"Anki RTL","type":"text/vnd.tiddlywiki","text":"خدمة المزامنة الرسمية المرافقة لبرنامج [[Anki]].\nتسمح لك الخدمة بمزامنة بياناتك في البرنامج من بطاقات، ووسائط، ومراجعات إلى خدمة سحابة\nومزامنتها مع أجهزة أخرى تستخدمها من هواتف وحواسيب.\n\nيضم أنكي ويب أيضا مخزون رزم وإضافات مشاركة من قبل المستخدمين.\n\nموقع أنكي ويب: https://ankiweb.net\nمخزون الرزم: https://ankiweb.net/shared/decks\nمخزون الإضافات: https://ankiweb.net/shared/addons/2.1\n","revision":"0","bag":"default"},
+
 {"title":"Antimoon","created":"20220315002701679","modified":"20220315004414038","tags":"لغات [[مواقع إنترنت]] RTL","type":"text/vnd.tiddlywiki","text":"https://www.antimoon.com/\n\nموقع شهير حول تعلم اللغة الإنجليزية.\n\nTODO: اطلع أكثر على أفكار أصحاب الموقع حول تعلم اللغات واكتب عنها تلخصيات\n","revision":"0","bag":"default"},
 
 {"title":"ARLPCG","created":"20220315003626904","modified":"20220315003915248","tags":"RTL Anki","type":"text/vnd.tiddlywiki","text":"إضافة [[Anki]] لتصدير الأبيات والمنظومات.\n\nالإضافة مشتقة من إضافة [[LPCG]].\nبدأت العمل عليها بعد طلب بعض الأخوة في [[مجموعة أنكي العربية على تلجرام]].\n\nرابط الإضافة: https://ankiweb.net/shared/info/1642554134","revision":"0","bag":"default"},
@@ -568,7 +578,7 @@ Error message and password prompt
 
 {"title":"mpvacious","created":"20220125050211010","modified":"20220501022736191","tags":"RTL برامج لغات","type":"text/vnd.tiddlywiki","text":"أداة تساعد على إضافة بطاقات [[Anki]] من مقاطع الفيديو المترجمة لتعلم اللغات.\n\nكتبت تعريفا بالبرنامج هنا: https://www.abdnh.net/mpvacious","revision":"0","bag":"default"},
 
-{"title":"RTLStylesheet","text":".tc-tagged-RTL .tc-tiddler-title,\n.tc-tagged-RTL .tc-tags-wrapper,\n.tc-tagged-RTL .tc-tiddler-body {\n    direction: rtl;\n}\n\n.tc-tiddler-frame.tc-tagged-RTL .tc-tiddler-controls {\n    float: left;\n}\n\npre {\n    direction: ltr;\n}\n\na {\n    unicode-bidi: isolate;\n}\n\na::before {\n    /* first strong isolate */\n    content: '\\2068';\n}\n\na::after {\n    /* pop directional isolate */\n    content: '\\202C';\n}\n","created":"20210516080445609","modified":"20220329225330511","tags":"$:/tags/Stylesheet","type":"text/css","revision":"0","bag":"default"},
+{"title":"RTLStylesheet","text":".tc-tagged-RTL .tc-tiddler-title,\n.tc-tagged-RTL .tc-tags-wrapper,\n.tc-tagged-RTL .tc-tiddler-body,\n.refs-section {\n    direction: rtl;\n}\n\n.tc-tiddler-frame.tc-tagged-RTL .tc-tiddler-controls {\n    float: left;\n}\n\npre {\n    direction: ltr;\n}\n\na {\n    unicode-bidi: isolate;\n}\n\na::before {\n    /* first strong isolate */\n    content: '\\2068';\n}\n\na::after {\n    /* pop directional isolate */\n    content: '\\202C';\n}\n","created":"20210516080445609","modified":"20220627045853536","tags":"$:/tags/Stylesheet","type":"text/css","revision":"0","bag":"default"},
 
 {"title":"Sandboxie","created":"20220530222544390","modified":"20220601051921793","tags":"RTL برامج","type":"text/vnd.tiddlywiki","text":"Sandboxie هو برنامج لعزل البرامج الأخرى وتشغيلها في بيئة لا تؤثر على النظام الأساسي. استخدام البرنامج الأبرز هو لتجربة البرامج غير الموثوقة بطريقة تمنعها من إلحاق الضرر بالنظام.\n\nوجدت البرنامج مفيدا مؤخرا ليس لهدفه الأساسي المتعلق بالأمان، بل فقط لتنصيب نسخ مختلفة من البرامج واختبارها.\nأستخدمه حاليا لتنصيب نسخ متعددة من [[Anki]] لاختبار الإضافات فيها، لأنني كثيرا ما أحتاج أن أتأكد عمل إضافة أعمل عليها على إصدار قديمة\nلا أستخدمها بنفسي لكن أريد دعمها. يمكنني طبعا ببساطة تنصيب نسخ متعددة في مجلدات مختلفة بطريقة عادية، لكنني لا أريد لهذه النسخ أن تؤثر على نظامي بأي شكل.\nسابقا كنت أستخدم برنامج [[Windows Sandbox|https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview]]\nلإنشاء نسخ مؤقتة كاملة من ويندوز 10 أستخدمها فقط لبضع دقائق وعندما أغلق البرنامج تذهب أدراج الرياح. كان هذه الطريقة \"overkill\"\nلغايتي البسيطة.\n\nفي السنوات الأخيرة تم فتح مصدر Sandboxie وهو الآن متوفر على [[GitHub]].\n\n!! ذو صلة\n\nhttps://en.wikipedia.org/wiki/Sandboxie_Plus\n\nhttps://sandboxie-plus.com/\n\nhttps://github.com/sandboxie-plus/Sandboxie\n\nhttps://www.dedoimedo.com/computers/sandboxie-review.html\n\n","revision":"0","bag":"default"},
 
@@ -585,6 +595,8 @@ Error message and password prompt
 {"title":"TiddlyWiki","created":"20210811031151617","modified":"20220226164712782","tags":"RTL برامج","type":"text/vnd.tiddlywiki","text":"TiddlyWiki هو برنامج لتدوين الملحوظات يمكن استخدامه لتدوين اليوميات وتنظيم الأفكار على شكل ويكي شخصية.\n\nكل ملحوظة في البرنامج هي عبارة عن منشور يمكن ربطه والإشارة إليه في الملحوظات الأخرى.\nتدعى كل ملحوظة \"tiddler\".\n\nهذه المدونة نفسها التي تقرأه الآن (\"ويكي عبدو الفضولية\") مبنية على TiddlyWiki.\n\nأنوي كتابة مقالات تعليمية عن البرنامج في المستقبل.\n\nانظر موقع البرنامج: https://tiddlywiki.com\n","revision":"0","bag":"default"},
 
 {"title":"uom-icon","text":"","type":"image/png","_canonical_uri":"https://universeofmemory.com/wp-content/uploads/fbrfg/favicon-32x32.png","created":"20220502013612797","modified":"20220502013647729","tags":"RTL","revision":"0","bag":"default"},
+
+{"title":"wikipediaLinks","created":"20220627040136659","modified":"20220627050324488","tags":"RTL $:/tags/Macro unlisted","type":"text/vnd.tiddlywiki","text":"\\define enWiki(title)\n[[ويكيبيديا الإنجليزية|https://en.wikipedia.org/wiki/$title$]]\n\n\\end\n\n\\define arWiki(title)\n[[ويكيبيديا العربية|https://ar.wikipedia.org/wiki/$title$]]\n\n\\end\n","revision":"0","bag":"default"},
 
 {"title":"YouGlish","created":"20220125045017118","modified":"20220125045931155","tags":"لغات [[مواقع إنترنت]] RTL التعلم","type":"text/vnd.tiddlywiki","text":"\nYouGlish هو قاموس إلكتروني أو محرك بحث تبحث فيه عن مفردات، لكن فرقه عن القواميس العادية هو\nأنه يعطيك فيديوهات يوتيوب تظهر فيها الكلمة المرادة بدلا من تعريفات مكتوبة. هذا مفيد جدا لتعلم اللغة من السياق.\n\nيوفر الموقع واجهة يظهر فيها الـtranscription أو الـsubtitles الخاص بالفيديو كما يظهر في يوتيوب مع\nميزات إضافية مثل قاموس مضمن يمكن استخدامه للتعرف على معنى كل كلمة تمر في الفيديو.\n\nشيء رهيب حول الموقع أنه يدعم لغات عديدة وليس فقط الإنجليزية.\n\nرابط الموقع: https://youglish.com/\n\nمؤخرا كتبت إضافة لبرنامج [[Anki]] تضمن واجهة YouGlish داخل البطاقات.\nانظر https://ankiweb.net/shared/info/38866997\n","revision":"0","bag":"default"},
 
@@ -608,7 +620,7 @@ Error message and password prompt
 
 {"title":"استخدام التكرار المتباعد لحفظ القرآن الكريم وتعلم العلوم الشرعية","created":"20220331040137788","modified":"20220331041327927","tags":"RTL Anki","type":"text/vnd.tiddlywiki","text":"استخدام قيم جدا لفعالية [[التكرار المتباعد]] هو حفظ القرآن الكريم وتعلم جبل العلوم الشرعية.\n\nليس هناك لدينا وعي كبير بعد بالتقنية ومعظمنا لم يسمع بها أصلا، لكن شعبية [[Anki]] تزداد كما لاحظت،\nوهناك [[مجتمع|مجموعة أنكي العربية على تلجرام]] -ولو صغير- يوظف التكرار المتباعد لتعلم العلوم الشرعية.\n\n!! ذو صلة\n\n- تجربة الشيخ عامر بهجت لأنكي: https://www.youtube.com/watch?v=0Li0NYfI9Xc\n\n- https://www.ummah.com/forum/forum/library/learn-arabic-and-other-languages/qur-an-and-islamic/390413-how-to-memorize-the-quran-and-never-forget-it","revision":"0","bag":"default"},
 
-{"title":"استخلاص المواقع","created":"20220411221023102","modified":"20220516013027822","tags":"RTL حاسوب","type":"text/vnd.tiddlywiki","text":"استخلاص المواقع (Web scraping) هو عملية استخراج المعلومات من المواقع الإلكترونية باستخدام برامج مخصصة.\n\nلنقل مثلا إنك تكتب برنامجا يظهر لك الأحوال الجوية المتوقعة كل يوم في مدينتك.\nتعرف موقعا يوفر هذه المعلومات تريد استخراج المعلومات منه وعرضها مثلا في إشعار يظهر\nتلقائيا كل يوم بساعة محددة على كمبيوترك.\nببعض الإلمام بلغات الويب HTML و CSS ومعرفة بمكتبة مخصصة لهذه المهمة مثل [[Beautiful Soup]] في [[بايثون]]،\nيمكنك كتابة كود لأتمتة عملية استخراج هذه المعلومات وتخزينها وعرضها.\n\nكانت بداية تعلمي للبرمجة بسبب مهمة شبيهة بهذه كنت أريد أتمتتها حيث كنت أتعلم اللغة الإنجليزية\nوأردت استخراج تعاريف الكلمات من [[قاموس أوكسفورد]] وإضافته إلى بطاقات [[أنكي]].\nبدأت عندها بتعلم أساسيات [[بايثون]] ومكتبة [[Beautiful Soup]] من خلال كتاب [[Automate the Boring Stuff with Python]] الرائع.\n\n!! مراجع\n\nhttps://en.wikipedia.org/wiki/Web_scraping\n","revision":"0","bag":"default"},
+{"title":"استخلاص المواقع","created":"20220411221023102","modified":"20220616144344243","tags":"RTL حاسوب","type":"text/vnd.tiddlywiki","text":"استخلاص المواقع (Web scraping) هو عملية استخراج المعلومات من المواقع الإلكترونية باستخدام برامج مخصصة.\n\nلنقل مثلا إنك تكتب برنامجا يظهر لك الأحوال الجوية المتوقعة كل يوم في مدينتك.\nتعرف موقعا يوفر هذه المعلومات تريد استخراج المعلومات منه وعرضها مثلا في إشعار يظهر\nتلقائيا كل يوم بساعة محددة على كمبيوترك.\nببعض الإلمام بلغات الويب HTML و CSS ومعرفة بمكتبة مخصصة لهذه المهمة مثل [[Beautiful Soup]] في [[بايثون]]،\nيمكنك كتابة كود لأتمتة عملية استخراج هذه المعلومات وتخزينها وعرضها.\n\nكانت بداية تعلمي للبرمجة بسبب مهمة شبيهة بهذه كنت أريد أتمتتها حيث كنت أتعلم اللغة الإنجليزية\nوأردت استخراج تعاريف الكلمات من [[قاموس أوكسفورد]] وإضافته إلى بطاقات [[أنكي]].\nبدأت عندها بتعلم أساسيات [[بايثون]] ومكتبة [[Beautiful Soup]] من خلال كتاب [[Automate the Boring Stuff with Python]] الرائع.\n\n!! مراجع\n\n* https://en.wikipedia.org/wiki/Web_scraping\n\n* إرشادات لتجنب الحجب من قبل المواقع التي تحاول منع البرامج من استخلاصها: https://scrapfly.io/blog/how-to-avoid-web-scraping-blocking-headers","revision":"0","bag":"default"},
 
 {"title":"اعمل بجد وذكاء - تعافَ من مرض التكاسل واستخدم وقتك بفعالية - universeofmemory.com","created":"20210906011255885","modified":"20210908215704657","tags":"RTL [[The Universe Of Memory]] التعلم لغات","type":"text/vnd.tiddlywiki","text":"https://universeofmemory.com/work-hard-and-smart/\n\n!! 3 أصناف لأنشطة تعلم اللغة\n\n* أنشطة قليلة الجهد: هي أنشطة تجعلك تشعر بشعور جيد لكن عائدها ضئيل مقارنة بأنشطة مثل التحدث مثلا. من الأمثلة عن هذه الأنشطة تطبيقات مثل Duolingo والتعلم من خلال الاستماع ولعب ألعاب الكمبيوتر ومشاهدة التلفاز.\n* أنشطة متوسطة الجهد: عادةً تسبب هذه الأنشطة تعبا يظهر بعد 1-2 ساعات من فعلها.\n* أنشطة عالية الجهد: هي أنشطة العمل الجاد والرغبة الدائمة في التحسن. إنها أنشطة تستنزف طاقتك كليا لكنها تعطي نتائج مثمرة.\n\n!! أمثلة لأنشطة عالية الجهد في تعلم اللغات حسب المستوى\n\n* في المستويات A1-A2: صياغة جمل بسيطة حتى يتطلب جهدا كبيرا.\n* في المستويات B1-B2: تعلم مفردات كافية وقواعد تمكنك من التحدث بطلاقة.\n* في المستويات C1-C2: استبدال الكلمات التي تعرفها بكلمات مرادفة أعقد لتفعيلها. مثل قول \"marvelous\" بدلا من \"great\".\n\n!! كيف تصلح خطة تعلمك\n\n# تعرف على الأنشطة عالية الجهد  حسب مستواك: حدد نشاطا تؤجله دائما وتكره القيام به لمدة أكثر من بضع دقائق واجبر نفسك على القيام به.\n# ابدأ بتعويض الأنشطة متوسطة الجهد وقليلة الجهد بالأنشطة عالية الجهد تدريجيا.\n\nيتغير ما يمكن اعتباره نشاطا عالي الجهد حسب مستواك، لذلك عليك دوما تكييف استراتيجيات تعلمك\nوالتعرف على الأنشطة عالية الجهد في كل مرحلة.\n","revision":"0","bag":"default"},
 
@@ -618,7 +630,7 @@ Error message and password prompt
 
 {"title":"التعلم النشط","created":"20210825004929671","modified":"20220214233511425","tags":"RTL التعلم","type":"text/vnd.tiddlywiki","text":"التعلم النشط (active learning) هو أسلوب تعلم يلعب فيه المتعلم دورا نشطا أكبر من مجرد كونه متلقيا سلبيا للمعلومة.\nإنه ببساطة أن يفعل المتعلم شيئا آخر بجانب مجرد الاستماع لمحاضرة مثلا، وهو عكس [[التعلم السلبي]].\n\nالتعلم النشط ضروري للتعلم الفعال وهناك دراسات علمية كثيرة توثق هذا.\n\n!! مبادئ التعلم\n\nتلخص مقالة التعلم النشط على ويكيبيديا الإنجليزية مبادئ التعلم النشط كالتالي\u003C\u003Cfnote \"https://en.wikipedia.org/wiki/Active_learning#The_principles_of_learning\">>:\n\n!!! المبدأ الأول: فكر بعمق\n* المعالجة العميقة للمعلومات\n* استخدام الصعوبة المرغوبة بحيث لا يكون التعلم سهلا جدا ولا صعبا جدا\n* محاولة تذكر المعلومات واستدعائها من الذاكرة غيبا\n* التمرن المتعمد\n* \"المداخلة\" بين مواد مختلفة، بمعنى دراسة أكثر من مادة أو موضوع بالتناوب\n* عرض المعلومات بأساليب شتى، لفظيا ومرئيا\n* استخدام المشاعر لتعزيز التذكر\n\n!!! المبدأ الثاني: اصنع الترابطات واستخدمها\n* قسم المعلومات إلى وحدات منظمة\n* اربط ما تتعلمه مع ما تعرفه مسبقا\n* تعلم المواد الأساسية أولا قبل الدخول بالتعقيدات\n* قدم أمثلة للفكرة نفسها في سياقات مختلفة\n* اعتمد على المبادئ والمفاهيم وليس الحفظ غيبا\n* اصنع سلاسل ترابطية من خلال نسج وحدات المعلومات في قصص\n* استخدم التكرار المتباعد بالمباعدة بين جلسات الدراسة\n* اربط ما تتعلمه بسياقات مختلفة\n* تجنب تضارب المعلومات مع بعضها من خلال تضمين تلميحات مميزة لكل معلومة تساعدك على تذكرها\n\nhttps://en.wikipedia.org/wiki/Active_learning\n\nhttps://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D9%85_%D9%86%D8%B4%D8%B7\n\n","revision":"0","bag":"default"},
 
-{"title":"التكرار المتباعد","created":"20210606234711009","modified":"20220115141757667","tags":"RTL الذاكرة التعلم","type":"text/vnd.tiddlywiki","text":"التكرار المتباعد هو تقنية فعالة لمراجعة ما تتعلمه حيث تكون فترات المراجعة متباعدة زمنيًا حسب صعوبتها،\nفتراجع المعلومة الأصعب بشكل متكرر أكثر، بينما تراجع المعلومة الأسهل بوتيرة أخف.\n\nالتقنية مبنية على فكرة [[تأثير التباعد]] في علم النفس والتي تنص على أن الدراسة تكون فعالة أكثر إذا كانت على جلسات متباعدة زمنيًا.","revision":"0","bag":"default"},
+{"title":"التكرار المتباعد","arwiki":"تكرار متباعد","created":"20210606234711009","enwiki":"Spaced repetition","modified":"20220627050013047","tags":"RTL الذاكرة التعلم مفهوم","type":"text/vnd.tiddlywiki","text":"التكرار المتباعد هو تقنية فعالة لمراجعة ما تتعلمه حيث تكون فترات المراجعة متباعدة زمنيًا حسب صعوبتها،\nفتراجع المعلومة الأصعب بشكل متكرر أكثر، بينما تراجع المعلومة الأسهل بوتيرة أخف.\n\nالتقنية مبنية على فكرة [[تأثير التباعد]] في علم النفس والتي تنص على أن الدراسة تكون فعالة أكثر إذا كانت على جلسات متباعدة زمنيًا.","revision":"0","bag":"default"},
 
 {"title":"التكرار المتباعد - gwern.net","created":"20210903181624591","modified":"20210905220957167","tags":"RTL التعلم الذاكرة","type":"text/vnd.tiddlywiki","text":"مرجع موسوعي حول [[التكرار المتباعد]] ومن أفضل المصادر عن الموضوع.\n\nhttps://www.gwern.net/Spaced-repetition","revision":"0","bag":"default"},
 
