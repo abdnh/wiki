@@ -146,6 +146,8 @@ Error message and password prompt
 
 <li>$:/abdnh/References</li>
 
+<li>$:/abdnh/styles/RTL</li>
+
 <li>$:/config/AnimationDuration</li>
 
 <li>$:/config/HideTags</li>
@@ -255,8 +257,6 @@ Error message and password prompt
 <li>LPCG</li>
 
 <li>mpvacious</li>
-
-<li>RTLStylesheet</li>
 
 <li>Sandboxie</li>
 
@@ -488,6 +488,8 @@ Error message and password prompt
 
 {"title":"$:/abdnh/References","created":"20220626014744617","modified":"20220627050102880","tags":"$:/tags/ViewTemplate RTL","type":"text/vnd.tiddlywiki","text":"\u003Cdiv class=refs-section>\n\n\u003C$list filter=\"[all[current]tag[مفهوم]]\">\n\n\u003C$list filter=\"[all[current]get[enwiki]] [all[current]get[arwiki]] +[first[]]\" variable=_>\n\n\n!! مراجع\n\n\n\u003C$list filter=\"[all[current]get[arwiki]]\" variable=arwiki>\n\u003C$macrocall $name=\"arWiki\" title=\u003C\u003Carwiki>>/>\n\u003C/$list>\n\n\u003C$list filter=\"[all[current]get[enwiki]]\" variable=enwiki>\n\u003C$macrocall $name=\"enWiki\" title=\u003C\u003Cenwiki>>/>\n\u003C/$list>\n\n\n\u003C/$list>\n\n\u003C/$list>\n\n\u003C/div>","revision":"0","bag":"default"},
 
+{"title":"$:/abdnh/styles/RTL","text":".tc-tiddler-title,\n.tc-tags-wrapper,\n.tc-tiddler-body,\n.refs-section {\n    direction: rtl;\n}\n\n.tc-tiddler-frame .tc-tiddler-controls {\n    float: left;\n}\n\n[data-tiddler-title^=\"$:/\"] .tc-tiddler-title,\n[data-tiddler-title^=\"$:/\"] .tc-tags-wrapper,\n[data-tiddler-title^=\"$:/\"] .tc-tiddler-body {\n    direction: ltr;\n}\n\n[data-tiddler-title^=\"$:/\"].tc-tiddler-frame .tc-tiddler-controls {\n    float: right;\n}\n\npre, code {\n    direction: ltr;\n}\n\na, code {\n    unicode-bidi: isolate;\n}\n\na::before {\n    /* first strong isolate */\n    content: '\\2068';\n}\n\na::after {\n    /* pop directional isolate */\n    content: '\\202C';\n}\n","created":"20210516080445609","modified":"20220916110322505","tags":"$:/tags/Stylesheet","type":"text/css","revision":"0","bag":"default"},
+
 {"title":"$:/config/AnimationDuration","created":"20210516080859754","modified":"20210516080859773","type":"text/vnd.tiddlywiki","text":"200","revision":"0","bag":"default"},
 
 {"title":"$:/config/HideTags","created":"20210531010346969","modified":"20210531010351398","tags":"","type":"text/vnd.tiddlywiki","text":"RTL","revision":"0","bag":"default"},
@@ -597,8 +599,6 @@ Error message and password prompt
 {"title":"LPCG","created":"20220315003219220","modified":"20220315003833885","tags":"Anki RTL","type":"text/vnd.tiddlywiki","text":"إضافة لبرنامج [[Anki]] تساعد على تصدير النصوص الطويلة مثل الأشعار والمنظومات إلى أنكي.\n\nالإضافة من تطوير [[سورن بيونسترد]].\n\nرابط الإضافة: https://ankiweb.net/shared/info/2084557901\n\nانظر أيضا نسخة عربية مشتقة منها: [[ARLPCG]]","revision":"0","bag":"default"},
 
 {"title":"mpvacious","created":"20220125050211010","modified":"20220501022736191","tags":"RTL برامج لغات","type":"text/vnd.tiddlywiki","text":"أداة تساعد على إضافة بطاقات [[Anki]] من مقاطع الفيديو المترجمة لتعلم اللغات.\n\nكتبت تعريفا بالبرنامج هنا: https://www.abdnh.net/mpvacious","revision":"0","bag":"default"},
-
-{"title":"RTLStylesheet","text":".tc-tagged-RTL .tc-tiddler-title,\n.tc-tagged-RTL .tc-tags-wrapper,\n.tc-tagged-RTL .tc-tiddler-body,\n.refs-section {\n    direction: rtl;\n}\n\n.tc-tiddler-frame.tc-tagged-RTL .tc-tiddler-controls {\n    float: left;\n}\n\npre, code {\n    direction: ltr;\n}\n\na, code {\n    unicode-bidi: isolate;\n}\n\na::before {\n    /* first strong isolate */\n    content: '\\2068';\n}\n\na::after {\n    /* pop directional isolate */\n    content: '\\202C';\n}\n","created":"20210516080445609","modified":"20220817180719703","tags":"$:/tags/Stylesheet","type":"text/css","revision":"0","bag":"default"},
 
 {"title":"Sandboxie","created":"20220530222544390","modified":"20220601051921793","tags":"RTL برامج","type":"text/vnd.tiddlywiki","text":"Sandboxie هو برنامج لعزل البرامج الأخرى وتشغيلها في بيئة لا تؤثر على النظام الأساسي. استخدام البرنامج الأبرز هو لتجربة البرامج غير الموثوقة بطريقة تمنعها من إلحاق الضرر بالنظام.\n\nوجدت البرنامج مفيدا مؤخرا ليس لهدفه الأساسي المتعلق بالأمان، بل فقط لتنصيب نسخ مختلفة من البرامج واختبارها.\nأستخدمه حاليا لتنصيب نسخ متعددة من [[Anki]] لاختبار الإضافات فيها، لأنني كثيرا ما أحتاج أن أتأكد عمل إضافة أعمل عليها على إصدار قديمة\nلا أستخدمها بنفسي لكن أريد دعمها. يمكنني طبعا ببساطة تنصيب نسخ متعددة في مجلدات مختلفة بطريقة عادية، لكنني لا أريد لهذه النسخ أن تؤثر على نظامي بأي شكل.\nسابقا كنت أستخدم برنامج [[Windows Sandbox|https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview]]\nلإنشاء نسخ مؤقتة كاملة من ويندوز 10 أستخدمها فقط لبضع دقائق وعندما أغلق البرنامج تذهب أدراج الرياح. كان هذه الطريقة \"overkill\"\nلغايتي البسيطة.\n\nفي السنوات الأخيرة تم فتح مصدر Sandboxie وهو الآن متوفر على [[GitHub]].\n\n!! ذو صلة\n\nhttps://en.wikipedia.org/wiki/Sandboxie_Plus\n\nhttps://sandboxie-plus.com/\n\nhttps://github.com/sandboxie-plus/Sandboxie\n\nhttps://www.dedoimedo.com/computers/sandboxie-review.html\n\n","revision":"0","bag":"default"},
 
