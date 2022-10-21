@@ -1,4 +1,4 @@
-.PHONY: all serve publish
+.PHONY: all serve publish feed
 
 all: index.html
 
@@ -11,3 +11,6 @@ serve:
 publish: index.html
 	git add index.html
 	git commit -m "publish"
+
+feed:
+	tiddlywiki . --output .  --build feed
