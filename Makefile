@@ -8,7 +8,7 @@ index.html: tiddlers/* plugins/* tiddlywiki.info
 serve:
 	tiddlywiki --listen
 
-publish: index.html
+publish: index.html feed
 	git add index.html
 	git commit -m "publish"
 
