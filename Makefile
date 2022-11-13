@@ -9,7 +9,7 @@ serve:
 	tiddlywiki --listen
 
 publish: index.html feed
-	git add index.html
+	git add index.html atom.xml
 	git commit -m "publish"
 
 feed:
