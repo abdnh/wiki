@@ -228,6 +228,10 @@ Error message and password prompt
 
 <li>anki-random-word-generator.png</li>
 
+<li>AnkiHub</li>
+
+<li>AnKing</li>
+
 <li>AnkiWeb</li>
 
 <li>Antimoon</li>
@@ -506,6 +510,8 @@ Error message and password prompt
 
 <li>يوميات فضولي ⁦(2022-11-09)⁩ - إضافة Anki للتعرف على الكلام</li>
 
+<li>يوميات فضولي ⁦(2022-12-05)⁩ - الانضمام لفريق AnKing</li>
+
 <li>يونيكود</li>
 
 </ul>
@@ -584,7 +590,7 @@ Error message and password prompt
 
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no","revision":"0","bag":"default"},
 
-{"title":"$:/StoryList","text":"","list":"[[مرحبًا بالعالم!]]","revision":"1","bag":"default"},
+{"title":"$:/StoryList","text":"","list":"[[مرحبًا بالعالم!]] [[يوميات فضولي ⁦(2022-12-05)⁩ - الانضمام لفريق AnKing]]","revision":"1","bag":"default"},
 
 {"title":"$:/theme","created":"20210516090859067","modified":"20210516090905335","type":"text/vnd.tiddlywiki","text":"$:/themes/tiddlywiki/snowwhite","revision":"0","bag":"default"},
 
@@ -605,6 +611,10 @@ Error message and password prompt
 {"title":"anki-icon","text":"","type":"image/x-icon","_canonical_uri":"https://apps.ankiweb.net/favicon.ico","created":"20220502014413764","modified":"20220917233319747","revision":"0","bag":"default"},
 
 {"title":"anki-random-word-generator.png","text":"","type":"image/png","_canonical_uri":"./images/anki-random-word-generator.png","created":"20220326193401575","modified":"20220917233319747","revision":"0","bag":"default"},
+
+{"title":"AnkiHub","created":"20221204221216456","modified":"20221204221219802","tags":"Anki","type":"text/vnd.tiddlywiki","text":"مشروع للعمل التعاوني على رزم [[Anki]] مطور من قبل فريق [[AnKing]].\n\nhttps://www.ankihub.net/","revision":"0","bag":"default"},
+
+{"title":"AnKing","created":"20221204221112228","modified":"20221204221117609","tags":"Anki","type":"text/vnd.tiddlywiki","text":"فريق معروف خصوصا برزم [[Anki]] التي يعمل عليها والموجهة لطلاب الطب.\nبجانب الرزم، الفريق يعمل على جوانب متعددة متعلقة بأنكي من كورسات ودعم مدفوع إلى إضافات وثم مشروعهم الأخير والأكبر [[AnkiHub]].\n\nانضممت [[مؤخرا|يوميات فضولي ⁦(2022-12-05)⁩ - الانضمام لفريق AnKing]] للفريق للعمل على تطوير الإضافات.","revision":"0","bag":"default"},
 
 {"title":"AnkiWeb","created":"20220618225839382","modified":"20220917233319747","tags":"Anki","type":"text/vnd.tiddlywiki","text":"خدمة المزامنة الرسمية المرافقة لبرنامج [[Anki]].\nتسمح لك الخدمة بمزامنة بياناتك في البرنامج من بطاقات، ووسائط، ومراجعات إلى خدمة سحابة\nومزامنتها مع أجهزة أخرى تستخدمها من هواتف وحواسيب.\n\nيضم أنكي ويب أيضا مخزون رزم وإضافات مشاركة من قبل المستخدمين.\n\n* موقع أنكي ويب: https://ankiweb.net\n* مخزون الرزم: https://ankiweb.net/shared/decks\n* مخزون الإضافات: https://ankiweb.net/shared/addons/2.1\n","revision":"0","bag":"default"},
 
@@ -883,6 +893,8 @@ Error message and password prompt
 {"title":"يوميات فضولي ⁦(2022-10-03)⁩ - تحزيم إضافات Anki التي تعتمد على ملحقات C","created":"20221003124335236","modified":"20221003125711717","tags":"[[يوميات فضولي]] RTL","type":"text/vnd.tiddlywiki","text":"في هذه الأيام أصرف كثيرا من وقتي على العمل على إضافة [[ZIM Reader|ZIM Reader for Anki]].\nبدأت الإضافة كـfork لإضافة [[Wiktionary|Wiktionary for Anki]] لإضافة دعم استيراد ملفات [[ZIM]] تحت طلب عميل لي على موقع [[Fiverr]] يريد استيراد ملفات اللغة الإغريقية والإسبانية.\nثم تلقيت مؤخرا [[طلبا من شخص آخر|https://github.com/abdnh/anki-zim-reader/issues/1]] لإضافة دعم للغة الألمانية.\nبعد إضافة أساسيات دعم اللغة الألمانية أرسلت الإضافة للعميل لكن تفاجأت أنها [[لا تعمل|https://github.com/abdnh/anki-zim-reader/issues/4]] على توزيعة لينكس الخاصة به بسبب مكتبة [[python-zstandard|https://github.com/indygreg/python-zstandard]] التي تعتمد على ملحقات C‎‎ (C extensions) المستخدمة من قبل الإضافة. كنت تحت انطباع أن الإضافة لا تعتمد على أي من هذه المكتبات ويجب أن تعمل على كل المنصات المدعومة من قبل أنكي بشكل تلقائي لكن تبين لي أن مكتبة [[zimply-core|https://github.com/dylanmccall/zimply-core]] التي أعتمد عليها لمعالجة ملفات ZIM\nتعتمد على المكتبة الأولى لاستخراج الملفات المضغوطة. بالأصل كان سبب اختياري لـzimply-core بدلا من مكتبة [[python-libzim|https://github.com/openzim/python-libzim/libzim]] الرسمية أن الأخيرة تعتمد على ملحقات C لكن تبين أن الأمر ينطبق على كلا المكتبات!\nلكن على كل حال استخدام zimply-core أسهل لأن الأخرى تعتمد على مكتبة [[libzim|https://github.com/openzim/libzim]] التي لا يوفر\nمؤلفوها ملفات ثنائية (binaries) جاهزة لنظام ويندوز، لذلك كان سيتوجب علي بناء المكتبة بنفسي (جربت هذا الشيء وفشلت...).\nلكنني أيضا واجهت [[مشكلة|https://github.com/indygreg/python-zstandard/issues/143]] مع python-zstandard\nلم أجد لها حلا بعد طول عناء، لذلك قررت تعديل zimply-core لكي تعتمد على مكتبة [[pyzstd|https://github.com/animalize/pyzstd/]] التي\nتؤدي المهمة نفسها كـpython-zstandard (أي توفر واجهة لخوارزمية [[Zstandard|https://github.com/facebook/zstd]]) والتي وجدت\nأن التعامل مع بناءها وتحزيمها أسهل. نجحت في النهاية بتحزيم الإضافة بطريقة تعمل على كل من ويندوز ولينكس وذلك من خلال جمع ملفات المكاتب الخاصة بكل منصة في حزمة واحدة بعد تنزيل الـwheels الخاصة بـpyzstd ودمجها ملفاتها في مجلد واحد ([[هنا|https://github.com/abdnh/anki-zim-reader/blob/8ef200a64cfcd6c3cf4b1a42a3c9fc5592b1f329/scripts/setup_pyzstd.sh]] التفاصيل المملة).\nكما اعتمدت على خدمة [[Github Actions]] لتحزيم الإضافة تلقائيا بعد كل push أجريه.\n\nكانت تجربة ممتعة وتعلمت الكثير عن نظام التحزيم في بايثون (ما معنى الـwheel وطريقة تسميتها مثلا) واستخدام Github Actions.\n\nأنوي نشر الإضافة على [[AnkiWeb]] قريبا!\n\n!! مراجع\n\nمقالة من موقع [[Real Python]] حول الـwheels أفادتني كثيرا: https://realpython.com/python-wheels/\n\n","revision":"0","bag":"default"},
 
 {"title":"يوميات فضولي ⁦(2022-11-09)⁩ - إضافة Anki للتعرف على الكلام","created":"20221109031338334","modified":"20221109033520263","tags":"[[يوميات فضولي]] RTL","type":"text/vnd.tiddlywiki","text":"أعمل على إضافة [[Anki]] لتحويل الصوت إلى كلام أو التعرف على الكلام بعبارة أخرى.\nشعرت بالحاجة للإضافة لتفريغ المقاطع الصوتية بدون ملفات ترجمة في البطاقات المصنوعة ببرنامج [[mpvacious]] لكي أقارن فهمي لما أسمع.\n\nمؤخرا خرج نموذج ذكاء صنعي للتعرف على الكلام من شركة OpenAI اسمه [[Whisper|https://github.com/openai/whisper]]. النموذج يدعم كثيرا من اللغات وجودته عالية جدا للغات مثل الإنجليزية.\nبطاقات mpvacious التي أريد تفريغها فيها أصوات باللغة التركية. جربت النموذج\nعلى التركية ووجدت أنه يعطي نتائج ممتازة إذا استخدمت نموذج `large`. هذا النموذج\nالكبير يعطي أفضل النتائج مقارنة بالنماذج الأصغر لكنه أبطأ ويتطلب عتادا أقوى.\nأخذ معي 20 دقيقة لمعالجة ملف 8 ثواني على لابتوب بكرت رسوميات مدمج، لذلك استخدامه في الإضافة لا يبدو عمليا لي.\nبحثت عن خدمات سحابة توفر GPU مأجورة لمشاريع الذكاء الصنعي ووجدت مثلا [[banana.dev|https://www.banana.dev/]] وأعطتني أداء جيدا،\nلذلك قد أضيفها للإضافة.\nكما وجدت تطبيق لـwhisper بلغات C/C++  يدعى [[whisper.cpp|https://github.com/ggerganov/whisper.cpp/]]\nميزته الكبرى أنه يعمل بشكل جيد على الـCPU. جربته على المقطع الصوتي نفسه وأخذ دقيقة ونصف فقط لمعالجة الملف، مقارنة بالـ20 دقيقة التي أخذها whisper الأصلي!\nلذلك تبدو الأمور واعدة وأنوي إضافة النموذج هذا للإضافة قريبا إن شاء الله.\n\nفي الوقت الراهن، وجدت أن أداء خدمة [[Deepgram|https://deepgram.com/]] جيد لذلك أضفتها للإضافة كأول خدمة مدعومة.\n\nمنشور الإضافة: [[Speech Recognition for Anki]]\n","revision":"0","bag":"default"},
+
+{"title":"يوميات فضولي ⁦(2022-12-05)⁩ - الانضمام لفريق AnKing","created":"20221204215621940","modified":"20221204220626743","tags":"[[يوميات فضولي]] RTL","type":"text/vnd.tiddlywiki","text":"مؤخرا رأيت [[منشورا على Reddit|https://www.reddit.com/r/Anki/comments/yucwl4/anyone_looking_to_get_paid_to_help/]] لفريق [[AnKing]] يبحثون عن مطوريين إضافات [[Anki] للعمل المدفوع على تطوير إضافات.\nتواصلت معهم فورا بمعرض أعمالي المتعلقة بأنكي وأصبحت عضوا من الفريق بسرعة! الفريق يعمل على تطوير إضافات جديدة\nونشرها أولا فقط لداعميهم على Patreon لتوفير الدعم المادي اللازم للدفع لمطوري هذه الإضافات، ثم ينشرون الإضافات مجانا للكل.\nفي الحقيقة كانت فكرة العمل مع AnKing تراودني لفترة بعد أن بدأت بالعمل المدفوع على أنكي وبعد أن رأيت أنهم يوظفون بعض مطوري الإضافات.\n\nبدأت بتحديث إضافات مثل [[Export Anki to PDF|https://ankiweb.net/shared/info/1442112168]] إلى نسخة 2.1.55 من أنكي القادمة\nوأنا متحمس للعمل على إضافات متنوعة!","revision":"0","bag":"default"},
 
 {"title":"يونيكود","created":"20211218153218539","modified":"20220917233319756","tags":"حاسوب","type":"text/vnd.tiddlywiki","text":"Unicode هو معيار يهدف لتوفير تمثيل إلكتروني موحد لمعظم نظم الكتابة الموجودة.\n\nhttps://en.wikipedia.org/wiki/Unicode\n\nhttps://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D8%B1%D9%85%D9%8A%D8%B2_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF","revision":"0","bag":"default"}
 ]</script><div id="storeArea" style="display:none;"></div>
