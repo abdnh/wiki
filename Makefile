@@ -1,6 +1,6 @@
-.PHONY: all serve publish feed
+.PHONY: all serve publish
 
-all: index.html
+all: index.html atom.xml
 
 index.html: tiddlers/* plugins/* tiddlywiki.info
 	tiddlywiki . --output . --build index
@@ -8,9 +8,9 @@ index.html: tiddlers/* plugins/* tiddlywiki.info
 serve:
 	tiddlywiki --listen
 
-publish: index.html feed
+publish: index.html atom.xml
 	git add index.html atom.xml
 	git commit -m "publish"
 
-feed:
+atom.xml:
 	tiddlywiki . --output .  --build feed
